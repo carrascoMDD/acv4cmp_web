@@ -46,5 +46,6 @@ git add ~/Works/MDD/CMProductions/gits/acv4cmp_web/Instructions
 git add ~/Works/MDD/CMProductions/gits/acv4cmp_web/Commands
 git add ~/Works/MDD/CMProductions/gits/acv4cmp_web/Configs
 
-
+# commit staged changes 
+git commit -m "Initial structure"
 
