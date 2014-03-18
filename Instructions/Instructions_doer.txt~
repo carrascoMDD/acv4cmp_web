@@ -1,0 +1,50 @@
+201403182247
+
+# Configure git user
+
+git config --global user.name carrascoMDDsl
+git config --global user.email carrascoGitHub@ModelDD.org
+
+
+# To hold git repositories for CMProductions
+
+mkdir ~/Works/MDD/CMProductions/gits
+cd ~/Works/MDD/CMProductions/gits
+
+
+# Clone from repository to a working directory
+
+git clone https://github.com/carrascoMDDsl/acv4cmp_web.git
+cd ~/Works/MDD/CMProductions/gits/acv4cmp_web
+
+# Create initial structure
+mkdir ~/Works/MDD/CMProductions/gits/acv4cmp_web/Requirements
+
+cp ~ Works/MDD/CMProductions/SVNs/acv4cmp/trunk/Interviews/Interview4-EndToEnd/Acid-BFG68srsNuMZspGPyb2Latqn.html ~/Works/MDD/CMProductions/gits/acv4cmp_web/Requirements
+
+
+mkdir ~/Works/MDD/CMProductions/gits/acv4cmp_web/Instructions
+
+# This file
+touch ~/Works/MDD/CMProductions/gits/acv4cmp_web/Instructions/Instructions_doer.txt
+touch ~/Works/MDD/CMProductions/gits/acv4cmp_web/Instructions/Instructions_reviewer.txt
+
+
+mkdir ~/Works/MDD/CMProductions/gits/acv4cmp_web/Commands
+
+
+mkdir ~/Works/MDD/CMProductions/gits/acv4cmp_web/Configs
+
+# Store initial git config
+git config --list > ~/Works/MDD/CMProductions/gits/acv4cmp_web/Configs/git_config_initial.txt
+
+
+# stage the initial structure
+
+git add ~/Works/MDD/CMProductions/gits/acv4cmp_web/Requirements
+git add ~/Works/MDD/CMProductions/gits/acv4cmp_web/Instructions
+git add ~/Works/MDD/CMProductions/gits/acv4cmp_web/Commands
+git add ~/Works/MDD/CMProductions/gits/acv4cmp_web/Configs
+
+
+
