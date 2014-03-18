@@ -5,6 +5,7 @@
 git config --global user.name carrascoMDDsl
 git config --global user.email carrascoGitHub@ModelDD.org
 
+pinksingerfifteehundred
 
 # To hold git repositories for CMProductions
 
@@ -38,6 +39,8 @@ mkdir ~/Works/MDD/CMProductions/gits/acv4cmp_web/Configs
 # Store initial git config
 git config --list > ~/Works/MDD/CMProductions/gits/acv4cmp_web/Configs/git_config_initial.txt
 
+git remote -v
+
 
 # stage the initial structure
 
@@ -46,8 +49,62 @@ git add ~/Works/MDD/CMProductions/gits/acv4cmp_web/Instructions
 git add ~/Works/MDD/CMProductions/gits/acv4cmp_web/Commands
 git add ~/Works/MDD/CMProductions/gits/acv4cmp_web/Configs
 
+
+# see changes
+git status
+git diff
+git diff --staged
+
 # commit staged changes 
 git commit -m "Initial structure"
+
+# Or
+git commit -a -m "Initial structure"
+# Or, later, may be
+git commit --amend
+
+# See history
+git log
+# Or
+git log -p
+# Or
+git log -stat
+# Or
+git log --pretty=oneline
+# Or
+sudo apt-get install gitk
+gitk
+
+
+# No need to add remote, as we begun with a clone of the repository in github
+# To add extra repositories we'd do
+#   git remote add [shortname] [url]
+#   git fetch [remote-name]
+
+# from origin
+#   git pull
+
+
+# Send changes to repository in github
+git push master origin/master
+
+# See fetch & push bindings with server of local branch
+git remote show 
+git remote show origin
+
+# #####################################################3
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
