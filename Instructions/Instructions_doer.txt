@@ -95,7 +95,7 @@ git remote show origin
 # #####################################################3
 
 git commit -a -m "GIT loop"
-git push master origin/master
+git push 
 
 # #####################################################3
 # #####################################################3
@@ -103,14 +103,23 @@ git push master origin/master
 
 
 
-# Add the work done on personal repository
+# Add the work done on personal svn repository
 cp -r ~/Works/MDD/CMProductions/SVNs/acv4cmp/trunk/Code/Result/cmp ~/Works/MDD/CMProductions/gits/acv4cmp_web/Code
 
+# Remove .svn directories
 find ~/Works/MDD/CMProductions/gits/acv4cmp_web/Code/cmp -name '.svn' -exec rm -r {} \;
 
-git commit -a -m "First code drop"
-git push master origin/m
+# Stage the Code directory
+git add ~/Works/MDD/CMProductions/gits/acv4cmp_web/Code
 
+# Commit, Push to github
+git commit -a -m "First code drop"
+git push 
+
+
+
+# #####################################################3
+# #####################################################3
 # #####################################################3
 
 
