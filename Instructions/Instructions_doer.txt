@@ -116,6 +116,7 @@ git add ~/Works/MDD/CMProductions/gits/acv4cmp_web/Code
 git commit -a -m "First code drop"
 git push 
 
+ls
 
 
 # #####################################################3
